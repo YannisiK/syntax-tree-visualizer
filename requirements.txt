@@ -1,0 +1,2 @@
+streamlit==1.60.0
+constituent-treelib==0.0.8
