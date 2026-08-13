@@ -6,7 +6,7 @@ st.title("Syntax Tree Generator")
 
 @st.cache_resource
 def load_nlp_pipeline():
-    return ConstituentTree.create_pipeline(Language.English, ConstituentTree.SpacyModelSize.Medium)
+    return ConstituentTree.create_pipeline(Language.English, ConstituentTree.SpacyModelSize.Medium, download_models=False)
 
 with st.spinner("Loading NLP engine..."):
     nlp_pipeline = load_nlp_pipeline()
